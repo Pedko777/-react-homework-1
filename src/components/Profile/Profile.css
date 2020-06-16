@@ -3,11 +3,12 @@
     display: flex;
     justify-content: center;
     background-color: #e7ecf2;
+    margin-bottom: 10px;
 }
 .profile {
     width: 200px;
     background-color: #fff;
-    border: 2px solid #d8e0ea;
+    border: 3px solid #d8e0ea;
     border-radius: 15px;
   }
   .description {
@@ -28,6 +29,7 @@
   }
   .avatar {
     border-radius: 50%;
+    cursor: pointer;
   }
   
   .stats {
@@ -38,7 +40,7 @@
     padding: 0;
     margin: 0px;
     width: 100%;
-  
+    cursor: pointer;
   }
   .stats li {
     background-color: #f3f6f9;;
@@ -53,4 +55,10 @@
   
   .stats span{
       padding: 10px 0;
+  }
+
+  .stats li:hover {
+    background: #fff;
+    color: rgb(57, 57, 57);
+    color: #026242;
   }

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import './Profile.css';
 
 export const Profile = ({ avatar, name, tag, location, stats }) => (
+  <>
     <div className="container">
       <div className="profile">
         <div className="description">
@@ -28,11 +29,11 @@ export const Profile = ({ avatar, name, tag, location, stats }) => (
         </ul>
       </div>
     </div>
+    </>
   )
 
   Profile.propTypes = {
-    user: PropTypes.shape({
-      name: PropTypes.string,
+    name: PropTypes.string,
       tag: PropTypes.string,
       location: PropTypes.string,
       avatar: PropTypes.string,
@@ -41,5 +42,4 @@ export const Profile = ({ avatar, name, tag, location, stats }) => (
         views: PropTypes.number.isRequired,
         likes: PropTypes.number.isRequired,
       }).isRequired,
-    }).isRequired,
   };
